@@ -12,17 +12,20 @@ b = divisor = Convert.ToDouble(Console.ReadLine());
  
 // Aplicando o Algoritmo de Euclides
 do
+
 {
     resto = dividendo % divisor;
     dividendo = divisor;
     divisor = resto;
 } 
+
 while (resto != 0);
 
         // Exibe resultado em cor verde
 Console.ForegroundColor = ConsoleColor.DarkGreen;
 Console.WriteLine($"\nMDC({a}, {b}) = {dividendo}");
 Console.ResetColor();
+
 
         // Pausa para o usuário ver o resultado
 Console.Write("\nPressione uma tecla para finalizar... ");
